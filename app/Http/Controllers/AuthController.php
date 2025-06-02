@@ -31,7 +31,7 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'Registrasi akun berhasil, Silahkan Login.'], 201);
     }
-
+    
 public function login(Request $request) {
     $credentials = $request->validate([
         "email" => "required|email|max:255",
